@@ -1,0 +1,137 @@
+@media screen and (min-width: 428px) {
+  .team-container > .container {
+    max-width: 552px;
+    padding: 0;
+  }
+
+  .main-contain {
+    max-width: 428px;
+  }
+
+  .advantages-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 552px;
+  }
+
+  .main-contain {
+    max-width: 768px;
+  }
+
+  .main-contain-title {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .advantages-container {
+    max-width: 736px;
+  }
+
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .advantages-title {
+    text-align: left;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .advantages-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .team-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .team-container > .container {
+    max-width: 268px;
+  }
+
+
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    min-width: 1160px;
+  }
+
+  .main-contain {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .main-contain-title {
+    margin-bottom: 48px;
+  }
+
+  .advantages {
+    padding: 120px 0;
+  }
+  .advantages-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advantages-icon {
+    width: 264px;
+    height: 112px;
+    background: var(--background-btn-kolor);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .advantages-list {
+    gap: 24px;
+  }
+
+  .advantages-text {
+    font-weight: 400;
+  }
+
+  .activity {
+    display: contents;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+}

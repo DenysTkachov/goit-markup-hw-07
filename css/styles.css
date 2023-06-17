@@ -37,7 +37,7 @@ img {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -159,8 +159,8 @@ img {
 .main-contain {
   background-color: var(--background-color-main-contain);
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 112px;
+  padding-bottom: 112px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -169,19 +169,24 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .main-contain-title {
-  font-size: 56px;
-  line-height: 1.07;
+  /* font-size: 56px;
+  line-height: 1.07; */
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--background-color);
-  max-width: 496px;
+  /* max-width: 496px; */
+  max-width: 320px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
+  margin-bottom: 72px;
 }
 
 .main-contain-btn {
@@ -214,42 +219,36 @@ img {
 /* <!-- Our advantages --> */
 
 .advantages {
-  padding: 120px 0;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.advantages-item {
-  width: calc((100% - 72px) / 4);
+.advantages-container {
+  max-width: 428px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-}
-
-.advantages-list {
-  display: flex;
-  gap: 24px;
+  text-align: center;
 }
 
 .advantages-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-main);
+  max-width: 396px;
 }
 
 .advantages-icon {
-  width: 264px;
-  height: 112px;
-  background: var(--background-btn-kolor);
-  border-radius: 4px;
-  margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 /* <!-- Activity --> */
@@ -263,22 +262,32 @@ img {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
 .activity {
-  padding-bottom: 120px;
+  display: none;
 }
 
 .activity-list {
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 
 /* Team */
 
 .team {
   background-color: var(--background-btn-kolor);
-  padding: 120px 0;
-  max-width: 1440px;
+  padding: 96px 0;
   margin: 0 auto;
+  width: 100%;
+}
+
+.team-container {
+  width: 294px;
+}
+
+.team-list {
+  display: block;
 }
 
 .team-title {
@@ -314,9 +323,8 @@ img {
   margin-bottom: 8px;
 }
 
-.team-list {
-  display: flex;
-  gap: 24px;
+.team-item:not(:last-child) {
+  margin-bottom: 72px;
 }
 
 .employees {
@@ -440,11 +448,11 @@ img {
 }
 
 .footer-container {
-  display: flex;  
+  display: flex;
 }
 
 .social {
-  margin-right: 120px;  
+  margin-right: 120px;
 }
 
 .social-title {
@@ -492,7 +500,6 @@ img {
   color: var(--background-color);
   margin-bottom: 16px;
 }
-
 
 .subscribe-input {
   width: 264px;
@@ -574,8 +581,7 @@ img {
   border: 1px solid var(--color-border);
   transition: color var(--chang-conditions),
     background-color var(--chang-conditions),
-    border-color var(--chang-conditions),
-    box-shadow var(--chang-conditions);
+    border-color var(--chang-conditions), box-shadow var(--chang-conditions);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -754,7 +760,6 @@ img {
   margin-bottom: 8px;
 }
 
-
 .modal-form-desc {
   position: relative;
 }
@@ -780,7 +785,6 @@ img {
   fill: var(--text-logo-color);
 }
 
-
 .modal-form-icon {
   position: absolute;
   top: 50%;
@@ -801,7 +805,7 @@ img {
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
-  background-color: transparent; 
+  background-color: transparent;
   outline: transparent;
   transition: border-color var(--chang-conditions);
   display: block;
@@ -818,7 +822,6 @@ img {
   line-height: 1.17;
 }
 
-
 .modal-form-checkbox {
   margin-bottom: 24px;
 }
@@ -826,16 +829,16 @@ img {
 .modal-form-span {
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4); 
+  border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color var(--chang-conditions), border var(--chang-conditions), fill var(--chang-conditions);
+  transition: background-color var(--chang-conditions),
+    border var(--chang-conditions), fill var(--chang-conditions);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
   margin-right: 8px;
 }
-
 
 /* .modal-form-check-desc::before {
   display: block;
@@ -851,7 +854,7 @@ img {
 .modal-form-check:checked + .modal-form-check-desc span {
   background-color: var(--color-link);
   border: none;
-  fill: var(--background-color); 
+  fill: var(--background-color);
 }
 
 .modal-form-check:focus + .modal-form-span {
@@ -866,9 +869,8 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--color-no_active-elements);  
+  color: var(--color-no_active-elements);
 }
-
 
 .modal-form-submit-btn {
   font-family: "Roboto", sans-serif;
