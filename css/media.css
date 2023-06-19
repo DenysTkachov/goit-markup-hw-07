@@ -1,6 +1,5 @@
 @media screen and (min-width: 428px) {
   .team-container > .container {
-    max-width: 552px;
     padding: 0;
   }
 
@@ -11,13 +10,13 @@
   .advantages-item:not(:last-child) {
     margin-bottom: 72px;
   }
+
+  .customers > .container {
+    max-width: 398px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 552px;
-  }
-
   .main-contain {
     max-width: 768px;
   }
@@ -60,18 +59,57 @@
   }
 
   .team-item {
-    flex-basis: calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .team-item:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .team-container > .container {
-    max-width: 268px;
+  .team-container {
+    width: 582px;
   }
 
+  .customers-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 
+  .customers > .container {
+    max-width: 552px;
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .modal {
+    max-width: 408px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    padding-right: 164px;
+    text-align: left;
+  }
+
+  .footer-content {
+    margin-right: 24px;
+  }
+
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .subscribe-lable {
+    width: 264px;
+    height: 40px;
+  }
+
+  .footer-container.container {
+    width: 768px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -86,6 +124,7 @@
   }
 
   .main-contain-title {
+    max-width: 496px;
     margin-bottom: 48px;
   }
 
@@ -123,6 +162,9 @@
 
   .activity {
     display: contents;
+  }
+
+  .activity > .container {
     padding-bottom: 120px;
   }
 
@@ -133,5 +175,33 @@
 
   .team-item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .customers-item {
+    width: calc((100% - 120px) / 6);
+  }
+
+  .customers-list {
+    flex-wrap: nowrap;
+  }
+  .footer-container.container {
+    width: 1158px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    padding: 0;
+  }
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-content {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .social {
+    margin-right: 80px;
+    margin-bottom: 0;
   }
 }
