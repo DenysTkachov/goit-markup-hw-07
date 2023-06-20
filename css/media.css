@@ -1,4 +1,7 @@
 @media screen and (min-width: 428px) {
+  .container {
+    max-width: 428px;
+  }
   .team-container > .container {
     padding: 0;
   }
@@ -17,6 +20,11 @@
 }
 
 @media screen and (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+
   .main-contain {
     max-width: 768px;
   }
@@ -148,6 +156,8 @@
 }
 
 @media screen and (min-width: 1158px) {
+
+
   .container {
     max-width: 1158px;
   }
@@ -165,6 +175,10 @@
 
   .advantages {
     padding: 120px 0;
+  }
+
+  .advantages-container {
+    min-width: 1158px;
   }
   .advantages-item {
     width: calc((100% - 72px) / 4);
@@ -212,6 +226,10 @@
     flex-basis: calc((100% - 72px) / 4);
   }
 
+  .team-container {
+    min-width: 1158px;
+  }
+
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
@@ -219,6 +237,11 @@
   .customers-list {
     flex-wrap: nowrap;
   }
+ 
+  .customers>.container {
+    max-width: 1158px;
+  }
+
   .footer-container.container {
     width: 1158px;
   }
