@@ -10,22 +10,37 @@
     max-width: 428px;
   }
 
-  
-
   .customers > .container {
     max-width: 398px;
   }
 }
 
 @media screen and (min-width: 768px) {
-
   .container {
     max-width: 768px;
   }
 
   .main-contain {
     max-width: 768px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-bg-tab.jpg);
   }
+
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-contain {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg-tab-2x.jpg);
+  }
+}
 
   .main-contain-title {
     max-width: 496px;
@@ -154,8 +169,6 @@
 }
 
 @media screen and (min-width: 1158px) {
-
-
   .container {
     max-width: 1158px;
   }
@@ -164,7 +177,24 @@
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/main-contain-bg.jpg);
   }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-contain {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/main-contain-bg-2x.png);
+  }
+}
 
   .main-contain-title {
     max-width: 496px;
@@ -235,8 +265,8 @@
   .customers-list {
     flex-wrap: nowrap;
   }
- 
-  .customers>.container {
+
+  .customers > .container {
     max-width: 1158px;
   }
 
