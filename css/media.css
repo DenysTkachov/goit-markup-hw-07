@@ -10,9 +10,7 @@
     max-width: 428px;
   }
 
-  .advantages-item:not(:last-child) {
-    margin-bottom: 72px;
-  }
+  
 
   .customers > .container {
     max-width: 398px;

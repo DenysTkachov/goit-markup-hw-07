@@ -365,6 +365,10 @@ img {
   display: none;
 }
 
+.advantages-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
 /* <!-- Activity --> */
 
 .activity-title {
