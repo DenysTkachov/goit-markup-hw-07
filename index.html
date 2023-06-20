@@ -49,7 +49,7 @@
         <!-- Link to email address  -->
         <address class="header-address">
           <ul class="header-list list">
-            <li class="header-item">
+            <li class="header-item tablet">
               <a
                 class="header-item-contakt link"
                 href="mailto:info@devstudio.com"
@@ -57,7 +57,7 @@
               >
             </li>
             <!-- Link to phone number -->
-            <li class="header-item">
+            <li class="header-item tablet">
               <a class="header-item-contakt link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -66,7 +66,7 @@
         </address>
 
         <!-- mobile-menu-burger -->
-        <button type="button" class="mobile-menu-burger">
+        <button type="button" class="mobile-menu-burger" data-menu-open>
           <svg
             class="icon-burger"
             aria-expanded="false"
@@ -80,11 +80,12 @@
       </div>
 
       <!-- mobile-menu -->
-      <div class="mobile-menu-wrapper is-hidden">
-        <div class="container mobile-menu-container">
+      <div class="mobile-menu-wrapper is-hidden" data-menu>
+        <div class="mobile-menu-container">
           <button
             type="button"
-            class="close-button mobile-close-button js-close-menu"
+            class="close-button mobile-close-button"
+            data-menu-close
           >
             <svg class="icon-close" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
@@ -108,68 +109,71 @@
                 <a class="link navigations-mobile-link" href=""></a>Contacts
               </li>
             </ul>
-          </nav>  
-            <!-- Link to email address  -->
-            <address class="navigations-mobile-address">
-              <ul class="navigations-mobile-addres-list list">
-                <li class="navigations-mobile-addres-item">
-                  <a
-                    class="navigations-mobile-addres-link link"
-                    href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <!-- Link to phone number -->
-                <li class="navigations-mobile-addres-item">
-                  <a
-                    class="navigations-mobile-addres-link link"
-                    href="tel:+110001111111"
-                    >+11 (000) 111-11-11</a
-                  >
-                </li>
-              </ul>
-            </address>
-          <div class="social">
-          <p class="social-title">Social media</p>
-          <ul class="social-list list">
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg              ></a>
-            </li>
-            <li class="social-item">
-              <a
-                href=""
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg              ></a>
-            </li>
-          </ul>
-        </div>
+          </nav>
+          <!-- Link to phone number -->
+          <address class="navigations-mobile-address">
+            <ul class="navigations-mobile-addres-list list">
+              <li class="navigations-mobile-addres-item">
+                <a
+                  class="navigations-mobile-tel-link link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <!-- Link to email address  -->
+              <li class="navigations-mobile-addres-item">
+                <a
+                  class="navigations-mobile-mail-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-mobile">
+            <ul class="navigations-mobile-soc-list list">
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -292,7 +296,8 @@
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use
                           href="./images/icons.svg#icon-instagram"
-                        ></use></svg                    ></a>
+                        ></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -301,7 +306,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -310,7 +316,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -319,7 +326,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -344,7 +352,8 @@
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use
                           href="./images/icons.svg#icon-instagram"
-                        ></use></svg                    ></a>
+                        ></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -353,7 +362,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -362,7 +372,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -371,7 +382,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -396,7 +408,8 @@
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use
                           href="./images/icons.svg#icon-instagram"
-                        ></use></svg                    ></a>
+                        ></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -405,7 +418,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -414,7 +428,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -423,7 +438,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -448,7 +464,8 @@
                       ><svg class="team-soc-icon" width="16" height="16">
                         <use
                           href="./images/icons.svg#icon-instagram"
-                        ></use></svg                    ></a>
+                        ></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -457,7 +474,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-twitter"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -466,7 +484,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-facebook"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
                   </li>
                   <li class="team-soc-item">
                     <a
@@ -475,7 +494,8 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       ><svg class="team-soc-icon" width="16" height="16">
-                        <use href="./images/icons.svg#icon-linkedin"></use></svg                    ></a>
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -558,7 +578,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
             </li>
             <li class="social-item">
               <a
@@ -567,7 +588,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
             </li>
             <li class="social-item">
               <a
@@ -576,7 +598,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
             </li>
             <li class="social-item">
               <a
@@ -585,7 +608,8 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg              ></a>
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
             </li>
           </ul>
         </div>
@@ -640,6 +664,8 @@
               </svg>
             </div>
           </div>
+
+          <!-- Modal-form -->
           <div class="modal-form-container">
             <label class="modal-form-field" for="user-phone">Phone</label>
             <div class="modal-form-desc">
@@ -698,7 +724,8 @@
               I accept the terms and conditions of the&nbsp;<a
                 href=""
                 class="modal-form-link"
-                >Privacy Policy</a>
+                >Privacy Policy</a
+              >
             </label>
           </div>
           <button type="submit" class="modal-form-submit-btn">Send</button>
@@ -706,5 +733,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
