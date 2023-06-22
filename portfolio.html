@@ -18,6 +18,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <!-- Page header -->
@@ -65,6 +66,111 @@
             </li>
           </ul>
         </address>
+        <!-- mobile-menu-burger -->
+        <button type="button" class="mobile-menu-burger" data-menu-open>
+          <svg
+            class="icon-burger"
+            aria-expanded="false"
+            role="img"
+            width="32"
+            height="22"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mobile-menu -->
+      <div class="mobile-menu-wrapper is-hidden" data-menu>
+        <div class="mobile-menu-container">
+          <button
+            type="button"
+            class="close-button mobile-close-button"
+            data-menu-close
+          >
+            <svg class="icon-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="navigations-mobile">
+            <ul class="list navigations-mobile-list">
+              <li class="navigations-mobile-item">
+                <a
+                  class="link navigations-mobile-link current"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="navigations-mobile-item">
+                <a class="link navigations-mobile-link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="navigations-mobile-item">
+                <a class="link navigations-mobile-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Link to phone number -->
+          <address class="navigations-mobile-address">
+            <ul class="navigations-mobile-addres-list list">
+              <li class="navigations-mobile-addres-item">
+                <a
+                  class="navigations-mobile-tel-link link"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <!-- Link to email address  -->
+              <li class="navigations-mobile-addres-item">
+                <a
+                  class="navigations-mobile-mail-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="social-mobile">
+            <ul class="navigations-mobile-soc-list list">
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg                ></a>
+              </li>
+              <li class="social-item">
+                <a
+                  href=""
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Portfolio -->
@@ -308,8 +414,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-instagram"></use></svg              ></a>
             </li>
             <li class="social-item">
               <a
@@ -318,8 +423,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-twitter"></use></svg              ></a>
             </li>
             <li class="social-item">
               <a
@@ -328,23 +432,23 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use></svg
-              ></a>
+                  <use href="./images/icons.svg#icon-facebook"></use></svg              ></a>
             </li>
             <li class="social-item">
               <a
                 href=""
                 class="social-link"
                 target="_blank"
-                rel="noopener noreferrer"
-                ><svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use></svg
-              ></a>
+                rel="noopener noreferrer">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <!-- Subscription-form -->
-        <div class="container">
+        <div class="subscribe-container">
           <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
             <label class="subscribe-lable">
