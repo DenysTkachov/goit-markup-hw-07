@@ -228,7 +228,8 @@ img {
 
 .navigations-mobile-soc-list {
   display: flex;
-  gap: 56px;
+  gap: 16px 56px;
+  flex-wrap: wrap;
 }
 
 .navigations-mobile-soc-list.list {
