@@ -10,18 +10,12 @@
     max-width: 428px;
   }
 
-  .customers > .container {
-    max-width: 398px;
-  }
-
-  
-
 
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 768px;    
   }
 
   .main-contain {
@@ -52,9 +46,7 @@
     line-height: 1.07;
   }
 
-  .advantages-container {
-    max-width: 736px;
-  }
+  
 
   .advantages-item {
     width: calc((100% - 24px) / 2);
@@ -92,6 +84,7 @@
 
   .team-container {
     width: 584px;
+    
   }
 
   .customers-item {
@@ -185,6 +178,8 @@
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .main-contain {
@@ -259,6 +254,10 @@
     padding-bottom: 120px;
   }
 
+  .team {
+    padding: 120px 0;
+  }
+
   .team-list {
     display: flex;
     gap: 24px;
@@ -271,6 +270,10 @@
   .team-container {
     min-width: 1158px;
   }
+
+  .customers {
+    padding: 120px 0;
+  } 
 
   .customers-item {
     width: calc((100% - 120px) / 6);
@@ -291,7 +294,12 @@
   .footer-container {
     flex-wrap: nowrap;
     padding: 0 15px;
+    gap: 0;
   }
+
+  
+
+
   .footer {
     padding: 100px 0;
   }
@@ -327,6 +335,6 @@
   }
 
   .portfolio-container {
-  max-width: 1160px;
-}
+    max-width: 1160px;
+  }
 }
